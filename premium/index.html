@@ -20,14 +20,36 @@ nav a:hover::after{width:100%}
 .premium p{color:#ccc;margin-top:1rem}
 
 .premium-grid{display:flex;gap:2rem;margin:3rem 0;flex-wrap:wrap;justify-content:center}
-.premium-card{width:280px;backdrop-filter:blur(10px);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:15px}
+.premium-card{width:280px;backdrop-filter:blur(10px);background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:2rem;border-radius:15px;position:relative}
 .premium-card h3{color:#00bfff;margin-bottom:1rem}
 .premium-card ul{list-style:none;color:#ccc}
 .premium-card li{margin:.5rem 0}
-.premium-card.featured{border:1px solid gold;transform:scale(1.05)}
 
-.purchase-btn{background:linear-gradient(90deg,#ffd700,#ffb700);color:#000;padding:1rem 3rem;border-radius:50px;text-decoration:none;font-weight:bold;transition:.3s}
-.purchase-btn:hover{opacity:.85}
+.badge{
+position:absolute;
+top:-12px;
+right:20px;
+background:gold;
+color:#000;
+padding:.3rem .8rem;
+font-size:.75rem;
+font-weight:bold;
+border-radius:20px;
+}
+
+.plan-btn{
+display:inline-block;
+margin-top:1.5rem;
+background:linear-gradient(90deg,#ffd700,#ffb700);
+color:#000;
+padding:.8rem 2rem;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.plan-btn:hover{opacity:.85}
 
 .bg span{position:absolute;display:block;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#00bfff55,#00ffbf33);animation:move 40s linear infinite}
 .bg span:nth-child(1){top:10%;left:15%;animation-duration:50s}
@@ -61,35 +83,39 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.9rem}
   <p>Unlock powerful upgrades built for serious communities.</p>
 
   <div class="premium-grid">
+
     <div class="premium-card">
       <h3>Weekly</h3>
       <ul>
-        <li>Features</li>
-        <li>Features?</li>
-        <li>Features!</
+        <li>Feature</li>
+        <li>Feature</li>
+        <li>Feature</li>
       </ul>
+      <a class="plan-btn" href="WEEKLY_LINK">Purchase</a>
     </div>
 
-    <div class="premium-card featured">
+    <div class="premium-card">
+      <span class="badge">Most Purchased</span>
       <h3>Monthly</h3>
       <ul>
-        <li>Features</li>
-        <li>Features?</li>
-        <li>Features!</
+        <li>Feature</li>
+        <li>Feature</li>
+        <li>Feature</li>
       </ul>
+      <a class="plan-btn" href="MONTHLY_LINK">Purchase</a>
     </div>
 
     <div class="premium-card">
       <h3>Yearly</h3>
       <ul>
-        <li>Features</li>
-        <li>Features?</li>
-        <li>Features!</li>
+        <li>Feature</li>
+        <li>Feature</li>
+        <li>Feature</li>
       </ul>
+      <a class="plan-btn" href="YEARLY_LINK">Purchase</a>
     </div>
-  </div>
 
-  <a class="purchase-btn" href="YOUR_PURCHASE_LINK">Purchase</a>
+  </div>
 </main>
 
 <footer>
