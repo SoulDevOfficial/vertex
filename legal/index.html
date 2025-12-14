@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vertex | Legal</title>
+
+<link rel="icon" href="/vertex/images/siteicon.png">
+<link rel="shortcut icon" href="/vertex/images/siteicon.png">
+
+<style>
+html, body { overscroll-behavior: none; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:sans-serif;overflow-x:hidden;position:relative;min-height:100vh}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:2rem;position:relative;z-index:10}
+header h1{font-size:1.8rem;letter-spacing:2px}
+nav a{color:#fff;text-decoration:none;margin-left:2rem;position:relative}
+nav a::after{content:'';position:absolute;width:0;height:2px;left:0;bottom:-5px;background:#00bfff;transition:.3s}
+nav a:hover::after{width:100%}
+
+.legal{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:4rem 2rem;position:relative;z-index:10}
+.legal h2{font-size:3rem;background:linear-gradient(270deg,#00bfff,#00ffbf,#00bfff);background-size:400% 400%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient 8s ease infinite}
+.legal p{color:#ccc;margin-top:1rem}
+
+.legal-grid{display:flex;gap:2rem;margin-top:3rem;flex-wrap:wrap;justify-content:center}
+.legal-card{
+width:280px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+padding:2.5rem 2rem;
+border-radius:15px;
+transition:.3s;
+}
+.legal-card:hover{transform:translateY(-6px)}
+
+.legal-card h3{color:#00bfff;margin-bottom:1rem}
+.legal-card a{
+display:inline-block;
+margin-top:1.5rem;
+background:#00bfff;
+color:#000;
+padding:.8rem 2rem;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+.legal-card a:hover{background:#00ffbf}
+
+.bg span{position:absolute;display:block;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,#00bfff55,#00ffbf33);animation:move 40s linear infinite}
+.bg span:nth-child(1){top:10%;left:15%;animation-duration:50s}
+.bg span:nth-child(2){top:50%;left:80%;animation-duration:60s}
+.bg span:nth-child(3){top:80%;left:40%;animation-duration:70s}
+.bg span:nth-child(4){top:30%;left:60%;animation-duration:80s}
+
+@keyframes move{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(-1200px) rotate(360deg)}}
+@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+footer{text-align:center;padding:2rem;color:#555;font-size:.9rem}
+</style>
+</head>
+
+<body>
+<div class="bg">
+  <span></span><span></span><span></span><span></span>
+</div>
+
+<header>
+  <h1>Vertex・All-In-One</h1>
+  <nav>
+    <a href="https://souldevofficial.github.io/vertex/">Home</a>
+    <a href="https://souldevofficial.github.io/vertex/premium/">Premium</a>
+    <a href="https://discord.com/oauth2/authorize?client_id=1448792879618068574">Invite</a>
+    <a href="https://discord.gg/SF4pQxtfSB">Support</a>
+  </nav>
+</header>
+
+<main class="legal">
+  <h2>Legal</h2>
+  <p>Select a document to view our policies.</p>
+
+  <div class="legal-grid">
+    <div class="legal-card">
+      <h3>Terms of Service</h3>
+      <p>Rules and conditions for using Vertex.</p>
+      <a href="/vertex/legal/terms.html">View</a>
+    </div>
+
+    <div class="legal-card">
+      <h3>Privacy Policy</h3>
+      <p>How we collect, use, and protect data.</p>
+      <a href="/vertex/legal/privacy.html">View</a>
+    </div>
+
+    <div class="legal-card">
+      <h3>Purchase Policy</h3>
+      <p>Refunds, billing, and subscription terms.</p>
+      <a href="/vertex/legal/purchase.html">View</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Vertex. All rights reserved・Site By Soul・Team Light.</p>
+</footer>
+</body>
+</html>
