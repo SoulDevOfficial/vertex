@@ -11,7 +11,6 @@ html, body {
   overscroll-behavior: none; /* Prevents both vertical and horizontal bounce */
 }
 
-
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0a0a0a;color:#fff;font-family:sans-serif;overflow-x:hidden;position:relative;min-height:100vh}
 
@@ -20,6 +19,23 @@ header h1{font-size:1.8rem;letter-spacing:2px}
 nav a{color:#fff;text-decoration:none;margin-left:2rem;position:relative}
 nav a::after{content:'';position:absolute;width:0;height:2px;left:0;bottom:-5px;background:#00bfff;transition:.3s}
 nav a:hover::after{width:100%}
+
+/* ✅ ADDED: GOLDEN BANNER */
+.gold-banner{
+  margin:1rem auto 0;
+  width:90%;
+  max-width:900px;
+  padding:1rem 2rem;
+  text-align:center;
+  border:2px solid #ffd700;
+  background:rgba(255, 215, 0, 0.18);
+  border-radius:14px;
+  color:#ffffff;
+  font-weight:bold;
+  backdrop-filter:blur(6px);
+  position:relative;
+  z-index:10;
+}
 
 .premium{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:4rem 2rem;position:relative;z-index:10}
 .premium h2{font-size:3rem;background:linear-gradient(270deg,#00bfff,#00ffbf,#00bfff);background-size:400% 400%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient 8s ease infinite}
@@ -86,6 +102,10 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.9rem}
   </nav>
 </header>
 
+<div class="gold-banner">
+  🎉 Use code VERTEX30OFF for 30% off your next purchase!\nCan only be used *once per customer.
+</div>
+
 <main class="premium">
   <h2>Vertex Premium</h2>
   <p>Unlock powerful upgrades built for serious communities.</p>
@@ -105,13 +125,11 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.9rem}
         <li>🔍 24/7 Premium Support</li>
         <li>💎 Premium Discord Role</li>
         <li>⏱️ 7 Days Money Back</li>
-        
       </ul>
-      <a class="plan-btn" href="https://buy.stripe.com/8x23co32O3Kp3tO2355wI04">£9.99</a> <!-- https://buy.stripe.com/8x23co32O3Kp3tO2355wI04 -->
+      <a class="plan-btn" href="https://buy.stripe.com/8x23co32O3Kp3tO2355wI04">£9.99</a>
     </div>
 
     <div class="premium-card">
-   <!-- <span class="badge">❗️ Discounted Price!</span> -->
       <h3>Yearly</h3>
       <ul>
         <li>Custom Embed Colors +</li>
@@ -124,7 +142,7 @@ footer{text-align:center;padding:2rem;color:#555;font-size:.9rem}
         <li>💎 Premium Discord Role</li>
         <li>⏱️ 7 Days Money Back</li>
       </ul>
-      <a class="plan-btn" href="https://buy.stripe.com/00wcMY32O0yd7K4bDF5wI06">£49.99</a> <!-- https://buy.stripe.com/00wcMY32O0yd7K4bDF5wI06 -->
+      <a class="plan-btn" href="https://buy.stripe.com/00wcMY32O0yd7K4bDF5wI06">£49.99</a>
     </div>
   </div>
 </main>
