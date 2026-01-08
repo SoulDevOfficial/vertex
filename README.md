@@ -3,5 +3,7 @@
 
 # Links
 > [Website](https://souldevofficial.github.io/vertex/)
-> [Developer](https://github.com/SoulDevOfficial)
-> 
+>
+> [Site Developer](https://github.com/SoulDevOfficial)
+>
+> [Bot Developer](https://github.com/Vertex338)
