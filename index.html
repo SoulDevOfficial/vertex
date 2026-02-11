@@ -14,15 +14,17 @@ html, body {
 
 .maintenance-banner {
   background: rgba(255, 204, 0, 0.15);
-  border: 1px solid #ff4d4d;
+  border-bottom: 2px solid #ff4d4d;
   color: #ff4d4d;
-  padding: 1rem;
+  padding: 12px 20px;
   text-align: center;
   font-weight: bold;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
   font-size: 0.9rem;
   display: flex;
   justify-content: center;
@@ -30,8 +32,11 @@ html, body {
   gap: 10px;
 }
 
+header {
+  margin-top: 50px;
+}
+
 .maintenance-banner span {
-  display: inline-block;
   width: 8px;
   height: 8px;
   background-color: #ff4d4d;
@@ -40,9 +45,9 @@ html, body {
 }
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
 }
   
 </style>
